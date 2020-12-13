@@ -6121,3 +6121,108 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 400;
 }
+
+body {
+  margin: 0;
+}
+
+body header {
+  text-transform: uppercase;
+}
+
+body header nav {
+  display: flex;
+  background-color: #363b47;
+  align-items: center;
+}
+
+body header nav h1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 300px;
+  flex: 1;
+}
+
+body header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10%;
+}
+
+body header nav ul li {
+  position: relative;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+}
+
+body header nav ul li a {
+  z-index: 1;
+  color: grey;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 5px;
+}
+
+body header nav ul li a::before {
+  position: absolute;
+  content: "";
+  height: 33.33%;
+  width: 0;
+  background-color: #0D7CFF;
+  bottom: 66.66%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+body header nav ul li::before {
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background-color: #0D7CFF;
+  right: 0;
+  z-index: 0;
+  top: 33.33%;
+  transition: all 0.5s;
+}
+
+body header nav ul li:after {
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background-color: #0D7CFF;
+  left: 0;
+  z-index: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+body header nav ul li:hover:before {
+  width: 100%;
+}
+
+body header nav ul li:hover:after {
+  width: 100%;
+}
+
+body header nav ul li:hover a:before {
+  width: 100%;
+}
+
+body header .banner {
+  width: 100%;
+}
+
+body header .banner img {
+  height: 400px;
+}
