@@ -6226,3 +6226,50 @@ body header .banner {
 body header .banner img {
   height: 400px;
 }
+
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: #3676bb;
+  margin: 50px 0px 0px 0px;
+}
+
+footer .end {
+  text-align: center;
+}
+
+footer .end h4 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+footer .end p {
+  color: white;
+  line-height: 1;
+}
+
+footer .end a {
+  color: white;
+}
+
+footer .end a i {
+  font-size: 30px;
+  padding: 30px;
+  opacity: 0.2;
+}
+
+footer .copy {
+  width: 100%;
+  height: 50px;
+  background-color: #38485f;
+  z-index: 1;
+  text-align: center;
+}
+
+footer .copy p {
+  color: grey;
+  opacity: 0.8;
+  padding: 10px;
+}
